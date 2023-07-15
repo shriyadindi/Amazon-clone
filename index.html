@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Amazon.com-Shop Online</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="hdn-head">
+            <h2>Hello, Sign in</h2>
+        </div>
+        <div class="hdn-content">
+            <h3>Digital Content & Devices</h3>
+            <ul>
+                <div>
+                    <li>Amazon Music</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Kindle E-Readers & Books</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Appstore for Android</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="hdn-content">
+            <h3>Shop By Department</h3>
+            <ul>
+                <div>
+                    <li>Electronics</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Computers</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Smart Homes</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Arts & Crafts</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="hdn-content">
+            <h3>Programs & Features</h3>
+            <ul>
+                <div>
+                    <li>Gift Cards & Mobile Recharges</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Flight Tickets</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Clearance Store</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+    </div>
+    <i class="fa-solid fa-xmark"></i>
+    <div class="triangle"><i class="fa-solid fa-triangle"></i></div>
+        <div class="hdn-sign">
+            <div class="hdn-table">
+                <div>
+                    <h3>Your Lists</h3>
+                    <ul>
+                        <li>Create a List</li>
+                        <li>Find a List & Registry</li>
+                        <li>Amazon Smile Charity Lists</li>
+                    </ul>
+                </div>
+                <div class="hdn-line"></div>
+                <div>
+                    <h3>Your Account</h3>
+                    <ul>
+                        <li>Account</li>
+                        <li>Orders</li>
+                        <li>Recommendations</li>
+                        <li>Browsing History</li>
+                        <li>Watchlist</li>
+                        <li>Video Purchases</li>
+                        <li>Kindle Unlimited</li>
+                        <li>Content & Devices</li>
+                        <li>Subscribe & Save Items</li>
+                        <li>Membership</li>
+                        <li>Music Library</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="black"></div>
+    <header>
+        <div class="first">
+            <div class="flex logo">
+            <a href="#"><img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/logo%20(1).png?raw=true" alt=""></a>
+            <div class="map flex">
+                <i class="fas fa-map-marker"></i>
+                <div>
+                    <span>Hello</span>
+                    <span>Select your Address</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex input">
+            <div>
+                <span>All</span>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <input type="text">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="flex right">
+            <div class="flex lang">
+                <img src="data:image/png;base64,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" alt="">
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="sign">
+                <span>Hello, Sign in</span>
+                <div class="flex ac">
+                    <span>Accounts & Lists</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="sign">
+                <span>Returns</span>
+                <span>& Orders</span>
+            </div>
+            <div class="flex cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="ca">Cart</span>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="second-1">
+            <div>
+                <i class="fas fa-bars"></i>
+                <span>All</span>
+            </div>
+        </div>
+        <div class="second-2">
+            <ul>
+                <li>Amazon&nbsp;miniTV</li>
+                <li>Sell</li>
+                <li>Best&nbsp;Sellers</li>
+                <li>Today's&nbsp;Deals</li>
+                <li>Mobiles</li>
+                <li>Customer&nbsp;Service</li>
+                <li>New&nbsp;Releases</li>
+                <li>Prime</li>
+                <li>Electronics</li>
+                <li>Home&nbsp;and&nbsp;kitchen</li>
+                <li>Amazon&nbsp;Pay</li>
+                <li>Gift&nbsp;Ideas</li>
+            </ul>
+        </div>
+        <!-- <div class="second-3">
+         <span>Prime day Launches<br>   15th - 16th July </span> -->
+        <!-- </div> -->
+    </div>
+    </header>
+    <section class="sec-1">
+        <div class="container">
+            <div class="slider">
+                <div class="image-box">
+                    <div class="slide">
+                        <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/banner%201.png?raw=true" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/banner%202.png?raw=true" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/banner%203.png?raw=true" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/banner%204.png?raw=true" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-1">
+                <div class="para">
+                    <p>You are on Amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.</p><a href="https://www.amazon.in/?&ext_vrnc=hi&tag=googhydrabk1-21&ref=pd_sl_nxqtetlae_e&adgrpid=60571832564&hvpone=&hvptwo=&hvadid=486453138860&hvpos=&hvnetw=g&hvrand=12535176714638732243&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061830&hvtargid=kwd-296458789801&hydadcr=14452_2154371&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVNJ6D0_UEAgzp9_IEK8-AtbwjPY81k1murdrRDI1PsbLEmGdhyqKDMaArp9EALw_wcB">Click here to go to amazon.in</a>
+                </div>
+                <div class="product-comp">
+                    <div class="box">
+                        <h3>Prime exclusive offers | Travel tickets</h3>
+                        <div class="box-a">
+                            <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/s1.png?raw=true">
+                        </div>
+                        <a href="#">See More</a>
+                    </div>
+                    <div class="box">
+                        <h3>Appliances for your home | Up to 55% off</h3>
+                        <div class="box-a">
+                            <div>
+                                <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/s2.png?raw=true" alt="">
+                            </div>
+                        </div>
+                        <a href="#">See all offers</a>
+                    </div>
+                    <div class="box box-c">
+                        <h3>Revamp your home in style with Amazon<br></h3>
+                        
+                        <div>
+                            <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/s3.png?raw=true" alt="">
+                        </div>
+                        <a href="#">Explore all</a>
+                        
+                    </div>
+                    <div class="box-b">
+                       <div class="best">
+                        <h3>Sign up for the Best Experience</h3>
+                        <button>Sign in securely</button>
+                       </div>
+                       <div>
+                        <img class="prime" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/prime%20day.png?raw=true" alt="">
+                       </div>
+                    </div>
+                </div>
+                <div class="product-comp2">
+                        <div class="box2">
+                            <div class="box-d">
+                                <h3>Automotive essentials | Up to 60% off</h3>
+                                <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/s4.png?raw=true">
+                                <br>
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+                        <div class="box2">
+                            <div class="box-d">
+                                <h3>Up to 70% off | Styles for women</h3>
+                                <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/s5.png?raw=true" alt="">
+                                <br>
+                                <a href="#">See all offers</a>
+                            </div>
+                        </div>
+                        <div class="box2">
+                            <div class="box-d">
+                                <h3>Up to 60% off | Professional tools & testing</h3>
+                                <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/s6.png?raw=true">
+                                <br>
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </section>
+    <div class="sec-8">
+        <!-- <h3>Popular Products in Wireless Internationally</h3> -->
+        <!-- <div class="slide-sec">
+            <div class="l-btn"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="r-btn"><i class="fa-solid fa-chevron-right"></i></div>
+            <ul class="product-slide">
+                <li><img src="images/pinter1.jpg" alt=""></li>
+                <li><img src="images/pinter2.jpg" alt=""></li>
+                <li><img src="images/pinter3.jpg" alt=""></li>
+                <li><img src="images/pinter4.jpg" alt=""></li>
+                <li><img src="images/pinter5.jpg" alt=""></li>
+                <li><img src="images/pinter6.jpg" alt=""></li>
+                <li><img src="images/pinter7.jpg" alt=""></li>
+                <li><img src="images/pinter8.jpg" alt=""></li>
+                <li><img src="images/pinter9.jpg" alt=""></li>
+                <li><img src="images/pinter10.jpg" alt=""></li>
+                <li><img src="images/pinter11.jpg" alt=""></li>
+                <li><img src="images/pinter12.jpg" alt=""></li>
+                <li><img src="images/pinter13.jpg" alt=""></li>
+                <li><img src="images/pinter14.jpg" alt=""></li>
+                <li><img src="images/pinter15.jpg" alt=""></li>
+            </ul>
+        </div> -->
+    </div>
+    <section class="sec-2">
+        <div class="slide-sec">
+            <div class="l-btn btn-1b"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="r-btn btn-1a"><i class="fa-solid fa-chevron-right"></i></div>
+            <!-- <h5>New arrivals from shops near you &nbsp;&nbsp;&nbsp;<a href="#">See all offers</a></h5> -->
+            <ul class="product-slide product-slide-1">
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a1.png?raw=true" alt=""></li>
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a2.png?raw=true" alt=""></li>
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a3.png?raw=true" alt=""></li>
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a4.png?raw=true" alt=""></li>
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a5.png?raw=true" alt=""></li>
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a6.png?raw=true" alt=""></li>
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a7.png?raw=true" alt=""></li>
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a8.png?raw=true" alt=""></li>
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a9.png?raw=true" alt=""></li>
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a10.png?raw=true" alt=""></li>
+                <li><img id="new" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/a1.png?raw=true" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    <div>
+        <img class="homef"src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/s12.png?raw=true">
+    </div>
+    <br>
+    <!-- <div class="product-comp">
+        <div class="box box-c">
+            <h3>Shop Activity Trackers and Smart Watches</h3>
+            <div>
+                <img src="images/watch.jpg" alt="">
+            </div>
+            <a href="#">See More</a>
+        </div>
+        <div class="box box-d">
+            <h3>Comfy Styles for Men</h3>
+            <div class="box-a">
+                <div>
+                    <img src="images/cm1.jpg" alt="">
+                    <span>Sweatshirts</span>
+                </div>
+                <div>
+                    <img src="images/cm2.jpg" alt="">
+                    <span>Joggers</span>
+                </div>
+                <div>
+                    <img src="images/cm3.jpg" alt="">
+                    <span>Cardigans</span>
+                </div>
+                <div>
+                    <img src="images/cm4.jpg" alt="">
+                    <span>Easy Tees</span>
+                </div>
+            </div>
+            <a href="#">See More</a>
+        </div>
+        <div class="box box-d">
+            <h3>Gaming Merchandise</h3>
+            <div class="box-a">
+                <div>
+                    <img src="images/gm1.jpg" alt="">
+                    <span>Apparel</span>
+                </div>
+                <div>
+                    <img src="images/gm2.jpg" alt="">
+                    <span>Hats</span>
+                </div>
+                <div>
+                    <img src="images/gm3.jpg" alt="">
+                    <span>Action Figures</span>
+                </div>
+                <div>
+                    <img src="images/gm4.jpg" alt="">
+                    <span>Mugs</span>
+                </div>
+            </div>
+            <a href="#">See More</a>
+        </div>
+        <div class="box box-c">
+            <h3>Shop Pet Supplies</h3>
+            <div>
+                <img src="images/pets.jpg" alt="">
+            </div>
+            <a href="#">See More</a>
+        </div>        
+        
+    </div> -->
+    <div class="product-comp2">
+        <div class="box2">
+            <div class="box-d">
+                <h3>Prime Day offers | Brands in Focus</h3>
+                <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/s9.png?raw=true">
+                <br>
+                <a href="#">See More</a>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box-d">
+                <h3>Minimum 50% off | Top styles for her</h3>
+                <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/s10.png?raw=true" alt="">
+                <br>
+                <a href="#">See all offers</a>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box-d">
+                <h3>New Series CRUSHED | Watch FREE on miniTV</h3>
+                <img src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/s11.png?raw=true">
+                <br>
+                <a href="#">Watch for FREE | miniTV</a>
+            </div>
+        </div>
+</div>
+</div>
+    <section class="sec-2">
+        <div class="slide-sec">
+            <div class="l-btn btn-1c"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="r-btn btn-1d"><i class="fa-solid fa-chevron-right"></i></div>
+             <h3>Top Sellers in Books</h3>
+            <ul class="product-slide product-slide-2">
+                <li><img id="bookd" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/b1.png?raw=true" alt=""></li>
+                <li><img id="bookd" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/b2.png?raw=true" alt=""></li>
+                <li><img id="bookd" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/b3.png?raw=true" alt=""></li>
+                <li><img id="bookd" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/b4.png?raw=true" alt=""></li>
+                <li><img id="bookd" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/b5.png?raw=true" alt=""></li>
+                <li><img id="bookd" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/b6.png?raw=true" alt=""></li>
+                <li><img id="bookd" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/b7.png?raw=true" alt=""></li>
+                <li><img id="bookd" src="https://github.com/shriyadindi/Amazon-clone/blob/main/images/b1.png?raw=true" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="backtop">
+            <span>Back to Top</span>
+        </div>
+        <div class="detail">
+            <div class="table">
+                <div>
+                    <div class="t-head">Get to Know Us</div>
+                    <ul>
+                        <li>Careers</li>
+                        <li>Blogs</li>
+                        <li>About Amazon</li>
+                        <li>Investor Relations</li>
+                        <li>Amazon Advices</li>
+                        <li>Amazon Science</li>
+                    </ul>
+                </div>
+            
+                <div>
+                    <div class="t-head">Make Money with Us</div>
+                    <ul>
+                        <li>Sell Products on Amazon</li>
+                        <li>Sell on Amazon Business</li>
+                        <li>Sell Apps on Amazon</li>
+                        <li>Become an Affiliate</li>
+                        <li>Advertise your Products</li>
+                        <li>Host an Amazon Hub</li>
+                    </ul>
+                </div>
+            
+           
+                <div>
+                    <div class="t-head">Amazon Payment Products</div>
+                    <ul>
+                        <li>Amazon Business Cards</li>
+                        <li>Shop with Points</li>
+                        <li>Reload your Balance</li>
+                        <li>Amazon Currency Converter</li>
+                    </ul>
+                </div>
+            
+            
+                <div>
+                    <div class="t-head">Let Us Help You</div>
+                    <ul>
+                        <li>Amazon and COVID-19</li>
+                        <li>Your Account</li>
+                        <li>Yoyr Orders</li>
+                        <li>Shipping Rates and Policies</li>
+                        <li>Returns and Replacements</li>
+                        <li>Manage your Content & Devices</li>
+                        <li>Amazon Assistant</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="copy">
+            <span>&copy; Designed by Shriya</span>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
